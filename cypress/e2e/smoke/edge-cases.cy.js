@@ -12,8 +12,6 @@ describe("Edge Cases Test", () => {
     cy.getId("cinterestrate").clear().type("1");
     cy.get('input[name="x"][value="Calculate"]').click();
 
-    // Verify the result, check for validity based on your expectations
-
     // Clear input fields
     cy.get('input[name="chouseprice"]').clear();
     cy.get('input[name="cdownpayment"]').clear();
@@ -26,8 +24,6 @@ describe("Edge Cases Test", () => {
     cy.getId("cloanterm").clear().type("1");
     cy.getId("cinterestrate").clear().type("1");
     cy.get('input[name="x"][value="Calculate"]').click();
-
-    // Verify the result, check for validity based on your expectations
 
     // Clear input fields
     cy.get('input[name="chouseprice"]').clear();
